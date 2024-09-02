@@ -1,3 +1,5 @@
+import { PGlite } from "@electric-sql/pglite";
+
 export class ipfsDatasetsJs {
     constructor(resources, metadata) {
         // this._contract = new Contract("ipfs_accelerate", ipfs_accelerate_abi);
@@ -7,9 +9,24 @@ export class ipfsDatasetsJs {
         this.libp2pKitJs = libp2p_kit_js;
         this.orbitDbKitJs = orbitdb_kit_js;
         this.ipfsKitJs = ipfs_kit_js;
+        this.newPGlite();
         return this;
     }
     
+    async newPGlite() {
+        this.pglite = new PGlite();
+    }
+
+    async loadPGlite(handle) {
+        // "idb://my-pgdata"
+        // "./path/to/pgdata"
+        return this.pglite(handle);
+    }
+
+    async queryPGlite(handle, sql) {
+        return this.pglite.query(sql);
+    }
+
     async getContract() {
         return this._contract;
     }

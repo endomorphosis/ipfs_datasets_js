@@ -1,3 +1,3 @@
-export * from './ipfs_accelerate_js/ipfs_accelerate.js';
-export { ipfsAccelerateJs } from './ipfs_accelerate_js/ipfs_accelerate.js';
-export { ipfsAccelerateJs as default } from './ipfs_accelerate_js/ipfs_accelerate.js';
+export * from './ipfs_datasets_js/ipfs_datasets.js';
+export { ipfsDatasetsJs } from './ipfs_datasets_js/ipfs_datasets.js';
+export { ipfsDatasetsJs as default } from './ipfs_datasets_js/ipfs_datasets.js';

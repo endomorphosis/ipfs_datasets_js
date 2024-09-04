@@ -1,7 +1,7 @@
 {
     "name": "ipfs_datasets_js",
     "type": "module",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "download and process datasets with ipfs/s3/orbitdb/huggingface",
     "main": "index.js",
     "scripts": {
